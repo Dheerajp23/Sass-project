@@ -3,18 +3,18 @@ $text-color: #484f5b;
 $secondary-font-size: 1.31rem;
 $primary-font-size: 4.6875rem;
 
-@mixin button-style{
+@mixin button-style {
     width: 203px;
     min-width: 150px;
     line-height: 50px;
     font-size: $secondary-font-size;
     color: $text-color;
     font-weight: 700;
-    background-color:#ffcccc;
+    background-color: #ffcccc;
     border: none;
 }
 
-@mixin primary-font{
+@mixin primary-font {
     font-size: $secondary-font-size;
     font-weight: 400;
     color: $text-color;
@@ -28,56 +28,216 @@ $primary-font-size: 4.6875rem;
 
 
 
-.wrap-2{
+.wrap-2 {
     background: url(./Images/wrap2.png) no-repeat center center/cover;
-    .inner{
+
+    .inner {
         padding: 175px 0;
         padding-left: 84px;
         margin-left: -20px;
-        h2{
+
+        h2 {
             font-size: $primary-font-size;
             margin-top: 4px;
             font-weight: 700;
             color: $text-color
         }
-        p{
+
+        p {
             margin: 57px 0;
             font-size: $secondary-font-size;
             font-weight: 400;
             color: $text-color;
         }
-        .button{
+
+        .button {
             @include button-style;
         }
     }
 }
 
-.wrap-3{
+.wrap-3 {
     padding: 80px 156px;
     padding-bottom: 115px;
-    div{
+
+    div {
         text-align: center;
     }
-    .imageDiv{
-       display: flex;
-       flex-direction: column;
-         justify-content: center;
-            align-items: center;
-           min-height: 229px;
-        img{
+
+    .imageDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 229px;
+
+        img {
             max-width: 100%;
             max-height: 100%;
             height: auto;
         }
-    }   
-    .imageS{
+    }
+
+    .imageS {
         padding-bottom: 20px;
     }
-    h3{
+
+    h3 {
         @include primary-font;
         font-weight: 700;
+
     }
-    p{
+
+    .imagesh3 {
+        margin-top: 13px;
+    }
+
+    .flex p {
         @include primary-font;
+    }
+}
+
+
+.wrap-4 {
+    background: url(./Images/wrap4.png) no-repeat center center/cover;
+
+
+    .inner {
+        padding: 127px 0 160px 78px;
+
+        h2 {
+            font-size: 58.33px;
+
+            font-weight: 700;
+            color: $text-color
+        }
+
+        p {
+            margin-top: 41px;
+            margin-bottom: 28px;
+            font-size: $secondary-font-size;
+            font-weight: 400;
+            color: $text-color;
+        }
+
+        .button {
+            @include button-style;
+        }
+    }
+}
+
+
+.wrap-5 {
+    background: url(./Images/wrap5.png) no-repeat center center/cover;
+
+    .inner {
+        padding: 109px 0 134px 55px;
+
+        h2 {
+            font-size: 58.33px;
+            font-weight: 700;
+            color: $text-color
+        }
+
+        p {
+            margin-top: 54px;
+            margin-bottom: 42px;
+            font-size: $secondary-font-size;
+            font-weight: 400;
+            color: $text-color;
+        }
+
+        .button {
+            @include button-style;
+        }
+    }
+}
+
+.wrap-6 {
+    padding: 92px;
+    text-align: center;
+    background: url(./Images/wrap6.png) no-repeat center center/cover;
+
+   .heading{
+    h2 {
+        font-size: 58.33px;
+        font-weight: 700;
+        color: $text-color
+    }
+
+    p {
+        margin: 45px 0;
+        font-size: $secondary-font-size;
+        font-weight: 400;
+    }
+   }
+
+    .flex1 {
+        flex-flow: row wrap ;            
+        .gallery {
+            max-width: 350px;
+            min-height: 558px;
+            box-shadow: 12px 17px 24px 0 rgba(0, 0, 0, 0.1);
+            .galleryImage {
+                
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }}
+                .gallery-heading {
+                    text-align: center;
+                    padding: 38px 33px;
+                    color: $text-color;
+                    
+                    h3 {
+                        font-size: 33.33px;
+                        line-height: 33.33px;
+                        font-weight: 700;
+                        
+                        
+                    }
+                    p {
+                        margin-top: 30px;
+                        font-size: 16.67px;
+                        font-weight: 400;
+                    }
+                
+            }
+        }
+    }
+}
+
+.wrap-7{
+    background-color: #e5ccc6;
+    .video{
+        padding: 156px 0;
+        padding-left: 83px;
+        position: relative;
+        img{
+            box-shadow: 12.86px 15.32px 43px 0 rgba(0, 0, 0, 0.59);
+            max-width: 100%;
+        }
+        button{
+            position: absolute;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, -50%);
+        }
+    }
+
+    .heading{
+        padding: 188px 0 200px 55px;
+        h2{
+            font-size: 58.33px;
+            font-weight: 700;
+            color: $text-color;
+        }
+        p{
+            margin: 48px 0;
+            font-size: $secondary-font-size;
+            font-weight: 400;
+            color: $text-color;
+        }
     }
 }

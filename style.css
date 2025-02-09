@@ -254,7 +254,145 @@ button {
   color: #484f5b;
   font-weight: 700;
 }
-.wrap-3 p {
+.wrap-3 .imagesh3 {
+  margin-top: 13px;
+}
+.wrap-3 .flex p {
+  font-size: 1.31rem;
+  font-weight: 400;
+  color: #484f5b;
+}
+
+.wrap-4 {
+  background: url(./Images/wrap4.png) no-repeat center center/cover;
+}
+.wrap-4 .inner {
+  padding: 127px 0 160px 78px;
+}
+.wrap-4 .inner h2 {
+  font-size: 58.33px;
+  font-weight: 700;
+  color: #484f5b;
+}
+.wrap-4 .inner p {
+  margin-top: 41px;
+  margin-bottom: 28px;
+  font-size: 1.31rem;
+  font-weight: 400;
+  color: #484f5b;
+}
+.wrap-4 .inner .button {
+  width: 203px;
+  min-width: 150px;
+  line-height: 50px;
+  font-size: 1.31rem;
+  color: #484f5b;
+  font-weight: 700;
+  background-color: #ffcccc;
+  border: none;
+}
+
+.wrap-5 {
+  background: url(./Images/wrap5.png) no-repeat center center/cover;
+}
+.wrap-5 .inner {
+  padding: 109px 0 134px 55px;
+}
+.wrap-5 .inner h2 {
+  font-size: 58.33px;
+  font-weight: 700;
+  color: #484f5b;
+}
+.wrap-5 .inner p {
+  margin-top: 54px;
+  margin-bottom: 42px;
+  font-size: 1.31rem;
+  font-weight: 400;
+  color: #484f5b;
+}
+.wrap-5 .inner .button {
+  width: 203px;
+  min-width: 150px;
+  line-height: 50px;
+  font-size: 1.31rem;
+  color: #484f5b;
+  font-weight: 700;
+  background-color: #ffcccc;
+  border: none;
+}
+
+.wrap-6 {
+  padding: 92px;
+  text-align: center;
+  background: url(./Images/wrap6.png) no-repeat center center/cover;
+}
+.wrap-6 .heading h2 {
+  font-size: 58.33px;
+  font-weight: 700;
+  color: #484f5b;
+}
+.wrap-6 .heading p {
+  margin: 45px 0;
+  font-size: 1.31rem;
+  font-weight: 400;
+}
+.wrap-6 .flex1 {
+  flex-flow: row wrap;
+}
+.wrap-6 .flex1 .gallery {
+  max-width: 350px;
+  min-height: 558px;
+  box-shadow: 12px 17px 24px 0 rgba(0, 0, 0, 0.1);
+}
+.wrap-6 .flex1 .gallery .galleryImage img {
+  max-width: 100%;
+  height: auto;
+}
+.wrap-6 .flex1 .gallery .gallery-heading {
+  text-align: center;
+  padding: 38px 33px;
+  color: #484f5b;
+}
+.wrap-6 .flex1 .gallery .gallery-heading h3 {
+  font-size: 33.33px;
+  line-height: 33.33px;
+  font-weight: 700;
+}
+.wrap-6 .flex1 .gallery .gallery-heading p {
+  margin-top: 30px;
+  font-size: 16.67px;
+  font-weight: 400;
+}
+
+.wrap-7 {
+  background-color: #e5ccc6;
+}
+.wrap-7 .video {
+  padding: 156px 0;
+  padding-left: 83px;
+  position: relative;
+}
+.wrap-7 .video img {
+  box-shadow: 12.86px 15.32px 43px 0 rgba(0, 0, 0, 0.59);
+  max-width: 100%;
+}
+.wrap-7 .video button {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+}
+.wrap-7 .heading {
+  padding: 188px 0 200px 55px;
+}
+.wrap-7 .heading h2 {
+  font-size: 58.33px;
+  font-weight: 700;
+  color: #484f5b;
+}
+.wrap-7 .heading p {
+  margin: 48px 0;
   font-size: 1.31rem;
   font-weight: 400;
   color: #484f5b;
@@ -268,6 +406,15 @@ button {
     margin-right: 10px;
     margin-left: 10px;
     padding: 10px;
+  }
+  .wrap-3 {
+    padding: 80px 10px;
+  }
+  .wrap-6 {
+    padding: 80px 10px;
+  }
+  .wrap-6 .flex1 {
+    gap: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -326,11 +473,25 @@ button {
     display: none;
   }
   .wrap-1 .inner {
-    padding-left: 0 !important;
+    padding: 50px 0 !important;
   }
   .wrap-2 .inner {
-    padding-left: 0 !important;
+    padding: 50px 0 !important;
     margin-left: 0 !important;
+  }
+  .wrap-4 .inner {
+    padding: 50px 0 !important;
+  }
+  .wrap-3 {
+    padding: 50px 10px;
+    background-position: center;
+    background-size: 100%;
+  }
+  .wrap-5 .inner {
+    padding: 50px 0 !important;
+  }
+  .wrap-6 {
+    padding: 50px 10px !important;
   }
 }
 @media screen and (max-width: 640px) {
@@ -385,20 +546,40 @@ button {
   .wrap-1 .inner {
     padding: 2rem 0;
   }
-  .wrap-1 .inner h2 {
-    font-size: 2.5rem;
+  h2 {
+    font-size: 2.5rem !important;
   }
   .wrap-2 .inner {
     padding: 2rem 0;
   }
-  .wrap-2 .inner h2 {
-    font-size: 2.5rem;
+  .wrap-3 .flex1 {
+    flex-flow: row wrap;
+  }
+  .wrap-3 .flex1 div {
+    flex-basis: 100%;
+  }
+  .wrap-4 .inner {
+    padding: 2rem 0;
+  }
+  .button {
+    width: 50% !important;
+  }
+  .wrap-6 .flex1 .gallery {
+    max-width: 100%;
+  }
+  .wrap-6 .flex1 .gallery .gallery-image img {
+    max-width: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 480px) {
   header img {
     width: 50%;
     height: auto;
+  }
+  p {
+    font-size: 1.1rem !important;
+    margin: 1.5rem 0 !important;
   }
 }
 
