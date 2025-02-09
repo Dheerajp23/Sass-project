@@ -185,6 +185,7 @@ $primary-font-size: 4.6875rem;
                     height: auto;
                 }}
                 .gallery-heading {
+                    background-color: #fff;
                     text-align: center;
                     padding: 38px 33px;
                     color: $text-color;
@@ -213,11 +214,11 @@ $primary-font-size: 4.6875rem;
         padding: 156px 0;
         padding-left: 83px;
         position: relative;
-        img{
+        .videoimg{
             box-shadow: 12.86px 15.32px 43px 0 rgba(0, 0, 0, 0.59);
             max-width: 100%;
         }
-        button{
+        .shapebutton{
             position: absolute;
             position: absolute;
             top: 50%;
@@ -227,7 +228,7 @@ $primary-font-size: 4.6875rem;
     }
 
     .heading{
-        padding: 188px 0 200px 55px;
+        padding: 168px 0 200px 55px;
         h2{
             font-size: 58.33px;
             font-weight: 700;
@@ -238,6 +239,9 @@ $primary-font-size: 4.6875rem;
             font-size: $secondary-font-size;
             font-weight: 400;
             color: $text-color;
+        }
+        .icons{
+            gap: 45px;
         }
     }
 }

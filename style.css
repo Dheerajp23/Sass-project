@@ -349,6 +349,7 @@ button {
   height: auto;
 }
 .wrap-6 .flex1 .gallery .gallery-heading {
+  background-color: #fff;
   text-align: center;
   padding: 38px 33px;
   color: #484f5b;
@@ -372,11 +373,11 @@ button {
   padding-left: 83px;
   position: relative;
 }
-.wrap-7 .video img {
+.wrap-7 .video .videoimg {
   box-shadow: 12.86px 15.32px 43px 0 rgba(0, 0, 0, 0.59);
   max-width: 100%;
 }
-.wrap-7 .video button {
+.wrap-7 .video .shapebutton {
   position: absolute;
   position: absolute;
   top: 50%;
@@ -384,7 +385,7 @@ button {
   transform: translate(50%, -50%);
 }
 .wrap-7 .heading {
-  padding: 188px 0 200px 55px;
+  padding: 168px 0 200px 55px;
 }
 .wrap-7 .heading h2 {
   font-size: 58.33px;
@@ -396,6 +397,9 @@ button {
   font-size: 1.31rem;
   font-weight: 400;
   color: #484f5b;
+}
+.wrap-7 .heading .icons {
+  gap: 45px;
 }
 
 @media screen and (max-width: 1180px) {
@@ -415,6 +419,23 @@ button {
   }
   .wrap-6 .flex1 {
     gap: 20px;
+  }
+  .wrap-7 .video {
+    text-align: center;
+    max-width: 100%;
+    margin-left: 0 !important;
+    padding: 80px 10px;
+  }
+  .wrap-7 .video img {
+    max-width: 100%;
+    height: auto;
+  }
+  .wrap-7 .video {
+    max-width: 100%;
+    margin-left: 0 !important;
+  }
+  .wrap-7 .heading {
+    padding: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -570,6 +591,10 @@ button {
   .wrap-6 .flex1 .gallery .gallery-image img {
     max-width: 100%;
     height: auto;
+  }
+  .wrap-7 .shapebutton {
+    transform: translate(-50%, -50%) !important;
+    width: 10% !important;
   }
 }
 @media screen and (max-width: 480px) {
