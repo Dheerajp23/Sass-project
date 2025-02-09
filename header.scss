@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$primary-font: 'Open Sans', sans-serif;
+$text-color: #484f5b;
+$secondary-font-size: 1.31rem;
+$primary-font-size: 4.6875rem;
+
+@mixin button-style{
+    width: 203px;
+    min-width: 150px;
+    line-height: 50px;
+    font-size: $secondary-font-size;
+    color: $text-color;
+    font-weight: 700;
+    background-color:#ffcccc;
+    border: none;
+}
+
+
+
+
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.active{
+    color: pink;
+}
+
+header{
+    background-color: #fff;
+    line-height: 98px;
+
+    .image-header{
+        vertical-align: middle;
+    }
+    nav {
+        ul{
+            justify-content: right;
+            margin-right: 44px;
+            li{
+                display: inline-block;
+                margin-right: 20px;
+                margin-left: 20px;
+                padding: 20px;
+
+                a{
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                }
+            }
+            li:hover{
+                color: pink;
+            }
+        }
+    }
+}
+
+.header{
+    position: relative;
+}
+
+
+.wrap-1{
+    background:url(./Images/backgroundShape.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .inner{
+        padding: 9.375rem 0;
+        padding-left: 3rem;
+
+        h2{
+            font-size: $primary-font-size;
+            font-weight: 700;
+            color: $text-color
+        }
+        p{
+            margin: 66px 0;
+            font-size: $secondary-font-size;
+            font-weight: 400;
+            color: $text-color;
+        }
+        .button{
+            @include button-style;
+        }
+    }
+}

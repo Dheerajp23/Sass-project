@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sass project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <header>
+                <div class="row align-center">
+                    <div class="col-2 col-p-6">
+                        <a href="index.html"><img class="image-header" src="./Images/Logo.png" alt="logo" height="92" width="82"></a>
+                    </div>
+                    <div class="col-10 col-p-6">
+                        <nav class="collapse5">
+                            <ul class=" flex align-center collapse">
+                                <li class="links"><a href="#home">Home</a></li>
+                                <li class="links"><a href="#home">About</a></li>
+                                <li class="links"><a href="#home">Blog</a></li>
+                                <li class="links"><a href="#home">Training</a></li>
+                                <li class="links"><a href="#home">Event</a></li>
+                                <li class="links"><a href="#home">Shop</a></li>
+                                <li class="links"><a href="#home">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+        </header>
+
+        <div class="wrap-1">
+           <div class="row">
+            <div class="col-6 col-t-12"></div>
+            <div class="col-6 col-t-12">
+                <div class="inner">
+                    <h2>Balance Your Body and Mind</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit <br> esse cillum dolore eu fugiat nulla pariatur. Excepteur <br> sint occaecat cupidatat.</p>
+                    <button class="button">JOIN US NOW</button>
+                </div>
+            </div>
+           </div>
+        </div>
+        </div>
+
+
+        <div class="wrap-2">
+            <div class="row">
+                <div class="col-6 col-t-12">
+                    <div class="inner">
+                        <h2>Pregnant Women Program</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit <br> esse cillum dolore eu fugiat nulla pariatur. Excepteur <br> sint occaecat cupidatat.</p>
+                        <button class="button">JOIN US NOW</button>
+                    </div>
+                </div>
+                <div class="col-6 col-t-12"></div>
+            </div>
+        </div>
+
+        <div class="wrap-3">
+            <div class="flex">
+                <div>
+                    <img src="./Images/Group.png" alt="Group" height="300" width="300">
+                    <h3>Yoga Class</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.links').click(function(){
+                $('.links').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
