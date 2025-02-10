@@ -1,4 +1,5 @@
-const bar = document.querySelector('.bar');
+const bar = document.querySelector('.bar'); 
+const burger = document.querySelector('.burger'); 
     
     
     
@@ -31,4 +32,21 @@ document.querySelectorAll('.linkss').forEach(function(link) {
         show.style.opacity = '0';
         show.style.transition = 'linear 0.5s';
     });
+});
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header2');
+
+    
+    if (window.scrollY > 50) {
+    header.style.transition = 'linear 0.5s';
+    header.style.lineHeight    = '50px'
+    header.style.backgroundColor = '#e5ccc6';
+    bar.style.color = '#000';
+    
+    } else {
+        header.style.lineHeight    = '98px'
+        header.style.backgroundColor = 'transparent';
+        bar.style.color = '#e5ccc6';
+    }
 });
