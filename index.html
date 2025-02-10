@@ -5,35 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Yoga</title>
 </head>
 
 <body>
     <div class="container">
+
+
         <div class="header">
             <header>
-                <div class="row align-center">
+                <div class="row align-center ">
                     <div class="col-2 col-p-6">
                         <a href="index.html"><img class="image-header" src="./Images/Logo.png" alt="logo" height="92"
                                 width="82"></a>
                     </div>
                     <div class="col-10 col-p-6">
                         <nav class="collapse5">
-                            <ul class=" flex align-center collapse">
-                                <li class="links"><a href="#home">Home</a></li>
-                                <li class="links"><a href="#home">About</a></li>
-                                <li class="links"><a href="#home">Blog</a></li>
-                                <li class="links"><a href="#home">Training</a></li>
-                                <li class="links"><a href="#home">Event</a></li>
-                                <li class="links"><a href="#home">Shop</a></li>
-                                <li class="links"><a href="#home">Contact</a></li>
-                            </ul>
+                            <div class="collapse">
+                                <ul class=" flex align-center ">
+                                    <li class="links"><a href="#home">Home</a></li>
+                                    <li class="links"><a href="#about">About</a></li>
+                                    <li class="links"><a href="#blog">Blog</a></li>
+                                    <li class="links"><a href="#training">Training</a></li>
+                                    <li class="links"><a href="#event">Event</a></li>
+                                    <li class="links"><a href="#shop">Shop</a></li>
+                                    <li class="links"><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="burger">
+                                <span class=" fa fa-bars bar"></span>
+                            </div>
+                                <div class="show">
+                                    <ul class=" flex align-center ">
+                                        <li class="linkss"><a href="#home">Home</a></li>
+                                        <li class="linkss"><a href="#about">About</a></li>
+                                        <li class="linkss"><a href="#blog">Blog</a></li>
+                                        <li class="linkss"><a href="#training">Training</a></li>
+                                        <li class="linkss"><a href="#event">Event</a></li>
+                                        <li class="linkss"><a href="#shop">Shop</a></li>
+                                        <li class="linkss"><a href="#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            
                         </nav>
                     </div>
                 </div>
             </header>
 
-            <div class="wrap-1">
+            <div class="wrap-1" id="about">
                 <div class="row">
                     <div class="col-6 col-t-12"></div>
                     <div class="col-6 col-t-12">
@@ -49,7 +69,7 @@
         </div>
 
 
-        <div class="wrap-2">
+        <div class="wrap-2" id="blog">
             <div class="row">
                 <div class="col-6 col-t-12">
                     <div class="inner">
@@ -63,7 +83,7 @@
             </div>
         </div>
 
-        <div class="wrap-3">
+        <div class="wrap-3" id="training">
             <div class="flex1">
                 <div>
                     <div class="imageDiv">
@@ -106,7 +126,7 @@
             </div>
         </div>
 
-        <div class="wrap-5">
+        <div class="wrap-5" id="shop">
             <div class="row">
                 <div class="col-6 col-t-12"></div>
                 <div class="col-6 col-t-12">
@@ -132,7 +152,7 @@
             <div class="flex1">
                 <div class="gallery">
                     <div class="gallery-image">
-                        <img src="./Images/gallery1.png" alt="gallery1" height="379" width="351">
+                        <img src="./Images/gallery1.webp" alt="gallery1" height="379" width="351">
                     </div>
                     <div class="gallery-heading">
                         <h3>Facilis Gravida</h3>
@@ -142,7 +162,7 @@
 
                 <div class="gallery">
                     <div class="gallery-image">
-                        <img src="./Images/gallery2.png" alt="gallery2" height="379" width="351">
+                        <img src="./Images/gallery2.webp" alt="gallery2" height="379" width="351">
                     </div>
                     <div class="gallery-heading">
                         <h3>Facilis Gravida</h3>
@@ -152,7 +172,7 @@
 
                 <div class="gallery">
                     <div class="gallery-image">
-                        <img src="./Images/gallery3.png" alt="gallery3" height="379" width="351">
+                        <img src="./Images/gallery3.webp" alt="gallery3" height="379" width="351">
                     </div>
                     <div class="gallery-heading">
                         <h3>Facilis Gravida</h3>
@@ -163,11 +183,11 @@
             </div>
         </div>
 
-        <div class="wrap-7">
+        <div class="wrap-7" id="event">
             <div class="row">
                 <div class="col-6 col-t-12">
                     <div class="video">
-                        <img class="videoimage" src="./Images/video.png" alt="video" width="627" height="418">
+                        <img class="videoimage" src="./Images/video.webp" alt="video" width="627" height="418">
                         <a href=""><span><img src="./Images/shapebutton.png" class="shapebutton" alt=""></span></a>
                     </div>
                 </div>
@@ -177,9 +197,9 @@
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit <br> esse cillum dolore eu fugiat
                             nulla pariatur. Excepteur <br> sint occaecat cupidatat.</p>
                         <div class="icons flex align-center">
-                            <img src="./Images/Facebook.png" alt="Facebook" height="38" width="38">
-                            <img src="./Images/Instagram.png" alt="Instagram" height="38" width="38">
-                            <img src="./Images/Twitter.png" alt="Twitter" height="38" width="38">
+                            <img src="./Images/Facebook.png" alt="Facebook" height="38" width="38"  class="socialIcons">
+                            <img src="./Images/Instagram.png" alt="Instagram" height="38" width="38" class="socialIcons">
+                            <img src="./Images/Twitter.png" alt="Twitter" height="38" width="38" class="socialIcons">
                         </div>
 
                     </div>
@@ -187,7 +207,115 @@
                 </div>
             </div>
         </div>
+
+        <div class="wrap-8" id="contact">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 col-t-12">
+                    <div class="heading">
+                        <h2>Get In Touch</h2>
+                        <p>Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum <br>
+                            fusce
+                            ut
+                            placerat orci nulla pellentesque dignissim enim sit.</p>
+                    </div>
+                    <form action="/" name="form" class="inputForm ">
+                        <input type="text" name="name" placeholder="Your Name" class="input">
+                        <input type="text" name="gender" placeholder="Gender" class="input">
+                        <textarea name="message" placeholder="Message" class="inputMessage"></textarea>
+                        <button class="button">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-pc-12">
+                    <div class="flex">
+                        <div class="heading1 col-p-12">
+                            <h4>Your Company</h4>
+                            <address>
+                                <p>
+                                    Halimun Street 25 <br>
+                                    Jakarta, Indonesia <br>
+                                    12850
+                                </p>
+                            </address>
+                            <p>www.yourdomain.com</p>
+                        </div>
+
+                        <div class="heading2 col-p-12">
+                            <h4>SiteMap</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#store">Store</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="heading2 heading3 col-p-12">
+                            <h4>Lorem Ipsum</h4>
+                            <ul>
+                                <li><a href="">Neque</a></li>
+                                <li><a href="">Suspendisse</a></li>
+                                <li><a href="">Dictum</a></li>
+                                <li><a href="">Porttitor</a></li>
+                                <li><a href="">Tincidunt</a></li>
+                                <li><a href="">Enim loboritis</a></li>
+                            </ul>
+                        </div>
+                        <div class="heading2 heading3 col-p-12">
+                            <h4>Site Amet</h4>
+                            <ul>
+                                <li><a href="">Neque</a></li>
+                                <li><a href="">Suspendisse</a></li>
+                                <li><a href="">Dictum</a></li>
+                                <li><a href="">Porttitor</a></li>
+                                <li><a href="">Tincidunt</a></li>
+                                <li><a href="">Enim loboritis</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-pc-12">
+                    <div class="sideHeading">
+                        <div class="image">
+                            <img src="./Images/footerLogo.png" alt="footerlogo" height="67" width="95">
+                        </div>
+                        <div class="para">
+                            <p>Copyright &copy; 2020 Freepik</p>
+                            <p>Company S.L. All rights reserved.</p>
+                            <div class="icons">
+                                <img src="./Images/Face.png" alt="Facebook" width="22" height="22" class="socialIcons">
+                                <img src="./Images/insta.png" alt="Facebook" width="22" height="22" class="socialIcons">
+                                <img src="./Images/twi.png" alt="Facebook" width="22" height="22" class="socialIcons">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="./script.js"></script>

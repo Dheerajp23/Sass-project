@@ -24,22 +24,33 @@ header {
 header .image-header {
   vertical-align: middle;
 }
-header nav ul {
+header .burger {
+  display: none;
+  text-align: right;
+  font-size: 3rem;
+  color: #efccc6;
+}
+header nav .collapse ul {
   justify-content: right;
   margin-right: 44px;
 }
-header nav ul li {
+header nav .collapse ul li {
   display: inline-block;
   margin-right: 20px;
   margin-left: 20px;
   padding: 20px;
 }
-header nav ul li a {
+header nav .collapse ul li a {
   font-size: 1.25rem;
   font-weight: 400;
 }
-header nav ul li:hover {
+header nav .collapse ul li:hover {
   color: pink;
+}
+header nav .show {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
 }
 
 .header {
@@ -47,7 +58,7 @@ header nav ul li:hover {
 }
 
 .wrap-1 {
-  background: url(./Images/backgroundShape.png);
+  background: url(./Images/backgroundShape.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -195,8 +206,12 @@ button {
   cursor: pointer;
 }
 
+.socialIcons {
+  cursor: pointer;
+}
+
 .wrap-2 {
-  background: url(./Images/wrap2.png) no-repeat center center/cover;
+  background: url(./Images/wrap2.webp) no-repeat center center/cover;
 }
 .wrap-2 .inner {
   padding: 175px 0;
@@ -264,7 +279,7 @@ button {
 }
 
 .wrap-4 {
-  background: url(./Images/wrap4.png) no-repeat center center/cover;
+  background: url(./Images/wrap4.webp) no-repeat center center/cover;
 }
 .wrap-4 .inner {
   padding: 127px 0 160px 78px;
@@ -293,7 +308,7 @@ button {
 }
 
 .wrap-5 {
-  background: url(./Images/wrap5.png) no-repeat center center/cover;
+  background: url(./Images/wrap5.webp) no-repeat center center/cover;
 }
 .wrap-5 .inner {
   padding: 109px 0 134px 55px;
@@ -324,7 +339,7 @@ button {
 .wrap-6 {
   padding: 92px;
   text-align: center;
-  background: url(./Images/wrap6.png) no-repeat center center/cover;
+  background: url(./Images/wrap6.webp) no-repeat center center/cover;
 }
 .wrap-6 .heading h2 {
   font-size: 58.33px;
@@ -402,11 +417,135 @@ button {
   gap: 45px;
 }
 
+.wrap-8 {
+  background: url(./Images/wrap6.webp) no-repeat center center/cover;
+  text-align: center;
+}
+.wrap-8 .heading {
+  padding-top: 92px;
+}
+.wrap-8 .heading h2 {
+  font-size: 58.33px;
+  font-weight: 700;
+  color: #484f5b;
+}
+.wrap-8 .heading p {
+  margin: 50px 0;
+  font-size: 1.31rem;
+  font-weight: 400;
+}
+.wrap-8 .inputForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 33px;
+}
+.wrap-8 .inputForm .input {
+  width: 100%;
+  background-color: #efefef;
+  border: 1.5px solid #999;
+  font-weight: 400;
+  height: 62px;
+  font-size: 1.31rem;
+  color: #484f5b;
+  padding: 20px 0 20px 40px;
+  outline: none;
+}
+.wrap-8 .inputForm .button {
+  width: 203px;
+  min-width: 150px;
+  line-height: 50px;
+  font-size: 1.31rem;
+  color: #484f5b;
+  font-weight: 700;
+  background-color: #ffcccc;
+  border: none;
+  margin-bottom: 61px;
+}
+.wrap-8 .inputForm .inputMessage {
+  width: 100%;
+  background-color: #efefef;
+  border: 1.5px solid #999;
+  font-weight: 400;
+  height: 9.17rem;
+  font-size: 1.31rem;
+  color: #484f5b;
+  padding-top: 20px;
+  padding-left: 40px;
+  outline: none;
+  margin-bottom: 23px;
+}
+
+footer {
+  background-color: #484f58;
+  color: #fff;
+}
+footer .flex {
+  padding: 70px 0 59px 153px;
+}
+footer .flex .heading1 h4 {
+  font-size: 23.31px;
+  line-height: 25.31px;
+  font-weight: 700;
+}
+footer .flex .heading1 address p {
+  font-size: 16.87px;
+  font-weight: 400;
+  line-height: 29.53px;
+  margin-top: 34px;
+  margin-bottom: 39px;
+}
+footer .flex .heading1 p {
+  font-size: 16.87px;
+  font-weight: 400;
+  line-height: 29.53px;
+}
+footer .flex .heading2 {
+  margin-left: 6rem;
+}
+footer .flex .heading2 h4 {
+  font-size: 16.87px;
+  line-height: 25.31px;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+footer .flex .heading2 ul li {
+  margin-bottom: 0.1rem;
+}
+footer .flex .heading2 a {
+  font-size: 16.87px;
+  line-height: 29.53px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+footer .flex .heading3 {
+  margin-left: 81px;
+}
+footer .sideHeading {
+  padding: 59px 0 61px 27px;
+}
+footer .sideHeading .icons {
+  display: flex;
+  gap: 26px;
+  margin-top: 33px;
+}
+footer .sideHeading .para {
+  padding-left: 17px;
+  margin-top: 24px;
+}
+footer .sideHeading .para p {
+  font-size: 16.87px;
+  line-height: 29.53px;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 1180px) {
-  header nav ul {
+  header nav .collapse ul {
     margin-right: 0;
   }
-  header nav ul li {
+  header nav .collapse ul li {
     margin-right: 10px;
     margin-left: 10px;
     padding: 10px;
@@ -436,6 +575,30 @@ button {
   }
   .wrap-7 .heading {
     padding: 1rem;
+  }
+  footer .flex {
+    padding: 70px 0 59px 52px;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  footer .flex .heading2 {
+    margin: 0;
+  }
+  footer .flex .heading3 {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  .col-pc-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  footer .flex {
+    padding: 1rem;
+    padding-top: 2.5rem;
+  }
+  footer .sideHeading {
+    padding: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -493,6 +656,32 @@ button {
   header nav .collapse {
     display: none;
   }
+  header nav .burger {
+    display: block;
+  }
+  header nav .show {
+    opacity: 0;
+    visibility: hidden;
+    top: 98px;
+    width: 100%;
+    right: 0;
+  }
+  header nav .show ul {
+    background-color: #ffcccc;
+    padding: 1rem;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    flex-direction: column;
+  }
+  header nav .show ul li {
+    padding: 10px;
+    margin: 0;
+    line-height: 50px;
+  }
+  header nav .show ul li a {
+    font-size: 1.25rem;
+  }
   .wrap-1 .inner {
     padding: 50px 0 !important;
   }
@@ -513,6 +702,15 @@ button {
   }
   .wrap-6 {
     padding: 50px 10px !important;
+  }
+  .wrap-8 .heading {
+    padding-top: 40px;
+  }
+  .wrap-8 .inputMessage {
+    margin-bottom: 0 !important;
+  }
+  .wrap-8 .button {
+    margin-bottom: 1.5rem !important;
   }
 }
 @media screen and (max-width: 640px) {
@@ -605,6 +803,13 @@ button {
   p {
     font-size: 1.1rem !important;
     margin: 1.5rem 0 !important;
+  }
+  footer .flex {
+    padding: 0 !important;
+    padding-top: 4rem !important;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    gap: 2.5rem;
   }
 }
 
